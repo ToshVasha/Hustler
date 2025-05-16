@@ -24,7 +24,7 @@ interface GalleryImage {
 const mockGalleryImages: GalleryImage[] = [
   {
     id: "img1",
-    url: "https://placehold.co/600x400/000000/FFFFFF/png",
+    url: "/images/placeholders/gallery-placeholder.png",
     alt: "Completed kitchen renovation",
     serviceId: "s2",
     serviceName: "Kitchen Renovation",
@@ -34,7 +34,7 @@ const mockGalleryImages: GalleryImage[] = [
   },
   {
     id: "img2",
-    url: "https://placehold.co/600x400/000000/FFFFFF/png",
+    url: "/images/placeholders/gallery-placeholder.png",
     alt: "Interior house painting",
     serviceId: "s1",
     serviceName: "House Painting",
@@ -44,7 +44,7 @@ const mockGalleryImages: GalleryImage[] = [
   },
   {
     id: "img3",
-    url: "https://placehold.co/600x400/000000/FFFFFF/png",
+    url: "/images/placeholders/gallery-placeholder.png",
     alt: "Bathroom remodeling",
     serviceId: "s3",
     serviceName: "Bathroom Remodeling",
@@ -54,7 +54,7 @@ const mockGalleryImages: GalleryImage[] = [
   },
   {
     id: "img4",
-    url: "https://placehold.co/600x400/000000/FFFFFF/png",
+    url: "/images/placeholders/gallery-placeholder.png",
     alt: "Exterior house painting",
     serviceId: "s1",
     serviceName: "House Painting",
@@ -64,7 +64,7 @@ const mockGalleryImages: GalleryImage[] = [
   },
   {
     id: "img5",
-    url: "https://placehold.co/600x400/000000/FFFFFF/png",
+    url: "/images/placeholders/gallery-placeholder.png",
     alt: "Custom kitchen cabinets",
     serviceId: "s2",
     serviceName: "Kitchen Renovation",
@@ -74,7 +74,7 @@ const mockGalleryImages: GalleryImage[] = [
   },
   {
     id: "img6",
-    url: "https://placehold.co/600x400/000000/FFFFFF/png",
+    url: "/images/placeholders/gallery-placeholder.png",
     alt: "Dining room painting",
     serviceId: "s1",
     serviceName: "House Painting",

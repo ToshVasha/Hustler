@@ -67,7 +67,7 @@ const jobRequests = [
     dates: '10/05/2025',
     times: '14:30 onwards',
     comments: 'Wall needs repainting, already fixed the wall, spare Storm by Good Luck',
-    image: 'https://placehold.co/600x400/000000/FFFFFF/png'
+    image: '/images/placeholders/job-placeholder.png'
   },
   {
     id: 'j2',
@@ -77,7 +77,7 @@ const jobRequests = [
     dates: '09/05/2025 - 12/05/2025',
     times: '',
     comments: 'approx 25 square meters, wallpaper already purchased and ready to be used',
-    image: 'https://placehold.co/600x400/000000/FFFFFF/png'
+    image: '/images/placeholders/job-placeholder.png'
   },
   {
     id: 'j3',
@@ -87,7 +87,7 @@ const jobRequests = [
     dates: '21/05/2025',
     times: '09:00-15:30',
     comments: 'Scrape old wallpaper, needs patch and paint',
-    image: 'https://placehold.co/600x400/000000/FFFFFF/png'
+    image: '/images/placeholders/job-placeholder.png'
   }
 ];
 
@@ -132,7 +132,7 @@ const mockServices = [
     description: 'Professional interior and exterior painting services',
     price: 299,
     category: 'painting',
-    image: 'https://placehold.co/600x400/000000/FFFFFF/png',
+    image: '/images/placeholders/service-placeholder.png',
     // ... existing code ...
   },
   {
@@ -141,7 +141,7 @@ const mockServices = [
     description: 'Thorough cleaning services for homes and offices',
     price: 199,
     category: 'cleaning',
-    image: 'https://placehold.co/600x400/000000/FFFFFF/png',
+    image: '/images/placeholders/service-placeholder.png',
     // ... existing code ...
   },
   {
@@ -150,7 +150,7 @@ const mockServices = [
     description: 'Expert plumbing services and repairs',
     price: 150,
     category: 'plumbing',
-    image: 'https://placehold.co/600x400/000000/FFFFFF/png',
+    image: '/images/placeholders/service-placeholder.png',
     // ... existing code ...
   }
 ];

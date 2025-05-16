@@ -89,7 +89,7 @@ const generateMockServices = (): Service[] => {
         description: `Professional ${category} services in ${suburb}, ${location.city}. Experienced team, quality work, and competitive rates.`,
         price,
         priceType: Math.random() > 0.5 ? "hour" : "job",
-        imageUrl: 'https://placehold.co/600x400/000000/FFFFFF/png',
+        imageUrl: '/images/placeholders/service-placeholder.png',
         rating: getRandomRating(),
         reviewCount: getRandomReviewCount(),
         providerId: `provider-${Math.floor(Math.random() * 50) + 1}`,
