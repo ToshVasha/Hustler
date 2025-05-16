@@ -1,63 +1,134 @@
 # Hustlr Card Verse
 
-A modern service marketplace platform built with React, TypeScript, and Tailwind CSS.
+A modern service marketplace platform connecting service providers with consumers in Australia.
 
-## Project Setup
+## Features
+
+- **Service Management**
+  - Browse and search services
+  - Detailed service listings
+  - Provider profiles and portfolios
+  - Real-time availability
+
+- **Booking System**
+  - Easy scheduling
+  - Multiple payment methods
+  - Booking history
+  - Service tracking
+
+- **User Management**
+  - Provider and Consumer profiles
+  - Rating and review system
+  - Messaging system
+  - Notification center
+
+- **Business Tools**
+  - Provider dashboard
+  - Service analytics
+  - Payment management
+  - Portfolio management
+
+## Tech Stack
+
+- **Frontend**
+  - React
+  - TypeScript
+  - Vite
+  - Tailwind CSS
+  - Shadcn UI
+
+- **State Management**
+  - React Context API
+  - Custom hooks
+
+- **Development Tools**
+  - ESLint
+  - Prettier
+  - TypeScript
+  - Git
+
+## Getting Started
 
 ### Prerequisites
-- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-### Development Setup
-```sh
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
+- Node.js (v18 or higher)
+- npm or yarn
+- Git
 
-# Step 2: Navigate to the project directory
-cd hustlr-card-verse
+### Installation
 
-# Step 3: Install dependencies
-npm install
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ToshVasha/Hustler.git
+   cd Hustler
+   ```
 
-# Step 4: Start the development server
-npm run dev
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Create a `.env` file in the root directory:
+   ```env
+   VITE_API_URL=your_api_url
+   VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── contexts/       # React context providers
+├── hooks/         # Custom React hooks
+├── pages/         # Page components
+├── config/        # Configuration files
+└── lib/           # Utility functions
 ```
 
-## Backend Integration
+## Contributing
 
-The frontend is designed to work with a RESTful API backend. Configure the API endpoints in the following files:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-1. `src/config/api.ts` - API base URL and endpoints
-2. `src/contexts/AuthContext.tsx` - Authentication endpoints
-3. `src/contexts/ServiceContext.tsx` - Service-related endpoints
+## Development Workflow
 
-### Environment Variables
+1. Create a new branch for each feature/fix
+2. Write tests for new features
+3. Ensure all tests pass
+4. Update documentation
+5. Create a pull request
+6. Get code review
+7. Merge after approval
 
-Create a `.env` file in the root directory with the following variables:
+## CI/CD Pipeline
 
-```env
-VITE_API_BASE_URL=your_backend_api_url
-VITE_AUTH_TOKEN_KEY=your_auth_token_key
-```
+The project uses GitHub Actions for continuous integration and deployment:
 
-## Technologies Used
+- **Lint**: Checks code style and formatting
+- **Type Check**: Verifies TypeScript types
+- **Test**: Runs unit and integration tests
+- **Build**: Creates production build
+- **Deploy**: Deploys to staging/production
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## License
 
-## Deployment
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-1. Build the project:
-```sh
-npm run build
-```
+## Contact
 
-2. Deploy the contents of the `dist` directory to your hosting provider.
+ToshVasha - [@ToshVasha](https://github.com/ToshVasha)
 
-## Custom Domain Setup
-
-1. Configure your domain's DNS settings to point to your hosting provider
-2. Set up SSL certificates for secure HTTPS connections
-3. Configure your hosting provider to serve the SPA correctly
+Project Link: [https://github.com/ToshVasha/Hustler](https://github.com/ToshVasha/Hustler)
