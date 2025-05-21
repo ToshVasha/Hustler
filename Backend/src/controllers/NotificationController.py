@@ -1,0 +1,9 @@
+'''
+might be optional
+
+def sendNotification(accountId: str, notification: Notification) -> None: ...
+def deleteNotification(accountId: str, notification: Notification) -> None: ...
+def getNotifications(accountId: str) -> list[Notification]: ...
+
+
+'''

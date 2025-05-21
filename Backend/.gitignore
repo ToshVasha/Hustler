@@ -1,0 +1,12 @@
+.venv
+__pycache__
+
+# unittests for models
+ServiceTest.py
+ServiceRequestTest.py
+AccountTest.py
+NotificationTest.py
+ReportTest.py
+ReviewTest.py
+SubscriptionTest.py
+WalletTest.py
