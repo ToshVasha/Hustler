@@ -150,3 +150,54 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ToshVasha - [@ToshVasha](https://github.com/ToshVasha)
 
 Project Link: [https://github.com/ToshVasha/Hustler](https://github.com/ToshVasha/Hustler)
+
+## Integration Testing
+
+To verify that the backend and frontend are properly integrated:
+
+1. Start the Backend Server:
+```bash
+cd Backend
+python src/Main.py
+```
+The backend should start on http://localhost:8000
+
+2. Start the Frontend Server:
+```bash
+npm run dev
+```
+The frontend should start on http://localhost:8081 (or another port if 8081 is in use)
+
+3. Test API Endpoints:
+```bash
+# Test root endpoint
+curl http://localhost:8000/
+
+# Test services endpoint
+curl http://localhost:8000/api/services
+```
+
+4. Verify Frontend-Backend Integration:
+- Open http://localhost:8081 in your browser
+- Try logging in with test credentials:
+  - Email: test@example.com
+  - Password: testpassword
+- Browse services and verify they load from the backend
+- Create a booking and verify it's saved
+- Check that real-time updates work
+
+5. Common Issues:
+- If you see "Address already in use" error for the backend, kill the existing process:
+  ```bash
+  lsof -i :8000
+  kill -9 <PID>
+  ```
+- If the frontend can't connect to the backend, check:
+  - Backend is running on port 8000
+  - CORS is properly configured
+  - API client is using the correct base URL
+
+6. Monitoring:
+- Backend logs will show in the terminal where you started the server
+- Frontend logs can be viewed in the browser's developer tools
+- Network requests can be monitored in the browser's Network tab
