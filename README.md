@@ -95,10 +95,27 @@ The frontend will run on http://localhost:8081 (or another port if 8081 is in us
 
 ## Test Data
 
-The application comes with generated test data including:
-- 100 users (mix of consumers and business users)
-- 100 services across various categories
-- 100 bookings with different statuses
+The application comes with two pre-configured accounts for testing:
+
+1. Service Provider Account:
+   - Email: provider@hustler.com
+   - Password: provider123
+   - Features:
+     - Pre-configured service listings
+     - Existing bookings
+     - Customer reviews
+     - Business profile
+
+2. Consumer Account:
+   - Email: consumer@hustler.com
+   - Password: consumer123
+   - Features:
+     - Booking history
+     - Saved services
+     - Provider reviews
+     - Personal profile
+
+Additional users can be created through the signup process. Each new user will start with a fresh account.
 
 To generate new test data:
 ```bash
@@ -110,13 +127,24 @@ python src/generate_test_data.py
 
 1. Start both the backend and frontend servers as described above
 2. Open http://localhost:8081 in your browser
-3. Log in with any email from the test data (password is not checked in demo)
+3. Log in with one of the pre-configured accounts:
+   - Service Provider: provider@hustler.com / provider123
+   - Consumer: consumer@hustler.com / consumer123
 4. Test the following features:
-   - Browse services
-   - Filter services by category
-   - Create bookings
-   - View bookings
-   - Update booking statuses
+
+For Service Providers:
+- View and manage service listings
+- Check booking requests
+- View customer reviews
+- Update business profile
+- Manage service availability
+
+For Consumers:
+- Browse available services
+- Book services
+- View booking history
+- Leave reviews
+- Update personal profile
 
 ## Development
 
@@ -179,12 +207,14 @@ curl http://localhost:8000/api/services
 
 4. Verify Frontend-Backend Integration:
 - Open http://localhost:8081 in your browser
-- Try logging in with test credentials:
-  - Email: test@example.com
-  - Password: testpassword
-- Browse services and verify they load from the backend
-- Create a booking and verify it's saved
-- Check that real-time updates work
+- Log in with one of the pre-configured accounts:
+  - Service Provider: provider@hustler.com / provider123
+  - Consumer: consumer@hustler.com / consumer123
+- Verify that:
+  - Service providers see their existing services and bookings
+  - Consumers see their booking history and saved services
+  - All data is properly loaded from the backend
+  - Real-time updates work for new bookings and messages
 
 5. Common Issues:
 - If you see "Address already in use" error for the backend, kill the existing process:
